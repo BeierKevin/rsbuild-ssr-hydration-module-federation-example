@@ -1,0 +1,28 @@
+{
+  "name": "rsbuild_ssr_hydration_host_vue",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "rsbuild build",
+    "dev:clientonly": "rsbuild dev --open",
+    "dev": "npm run build && node --experimental-vm-modules ./server.mjs",
+    "preview": "rsbuild preview",
+    "preview:server": "node --experimental-vm-modules ./server.mjs"
+  },
+  "dependencies": {
+    "@module-federation/enhanced": "^0.11.1",
+    "@module-federation/node": "^2.6.30",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@module-federation/rsbuild-plugin": "^0.8.12",
+    "@rsbuild/core": "^1.2.8",
+    "@rsbuild/plugin-node-polyfill": "^1.3.0",
+    "@rsbuild/plugin-vue": "^1.0.5",
+    "@types/express": "^5.0.0",
+    "express": "^4.21.2",
+    "typescript": "^5.7.3"
+  },
+  "packageManager": "pnpm@10.6.2"
+}

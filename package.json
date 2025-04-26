@@ -1,0 +1,33 @@
+{
+  "name": "rsbuild-ssr-hydration-module-federation-example",
+  "version": "1.0.0",
+  "description": "An example project demonstrating Server-Side Rendering (SSR), Hydration, and Module Federation with Rsbuild.",
+  "scripts": {
+    "dev:host": "pnpm --filter host dev",
+    "dev:remote": "pnpm --filter remote dev",
+    "dev": "pnpm -r --parallel dev"
+  },
+  "workspaces": [
+    "host",
+    "remote"
+  ],
+  "keywords": [
+    "rsbuild",
+    "server-side-rendering",
+    "ssr",
+    "hydration",
+    "module-federation",
+    "microfrontends",
+    "vue",
+    "vue3",
+    "rsbuild-ssr",
+    "rsbuild-module-federation",
+    "rsbuild-hydration",
+    "rsbuild-example",
+    "ssr-example",
+    "microfrontend-example"
+  ],
+  "author": "Kevin Beier",
+  "license": "MIT",
+  "packageManager": "pnpm@10.6.2"
+}
